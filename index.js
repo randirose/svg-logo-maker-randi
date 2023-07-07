@@ -1,7 +1,7 @@
 // import files/libraries
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./shapes.js');
+const Shape = require('./shapes.js');
 
 // questions array for inquirer to prompt user with
 const questions = [
