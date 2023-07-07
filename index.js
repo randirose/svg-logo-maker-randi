@@ -49,7 +49,7 @@ function writeToFile(fileName, answers){
         shapeSVG = circle.render();
     } else {
         const square = new Square();
-        shapeColor = square.setColot(answers.shapeColor);
+        shapeColor = square.setColor(answers.shapeColor);
         shapeSVG = square.render();
     }
     let logoSvgText = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
