@@ -52,14 +52,14 @@ function writeToFile(fileName, answers){
         shapeColor = square.setColot(answers.shapeColor);
         shapeSVG = square.render();
     }
-    let logoText = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    let logoSvgText = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
     ${shapeSVG}
   
     <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answers.textColor}">${answers.logoText}</text>
   
     </svg>`
-    fs.writeFile(fileName, logoText, err =>{
+    fs.writeFile(fileName, logoSvgText, err =>{
         err ? console.error(err) : console.log("Generated logo.svg");
     })
 }
