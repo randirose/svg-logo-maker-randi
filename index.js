@@ -35,3 +35,22 @@ const questions = [
         message: "Please enter a color for the shape (keyword OR hexadecimal number)"
     }
 ]
+
+function writeToFile(fileName, answers){
+    //code for what to write to the svg logo file
+    fs.writeFile(fileName, logoText, err =>{
+        err ? console.error(err) : console.log("Generated logo.svg");
+    })
+}
+
+// this function initializes app and begins asking user questions; calls writeToFile function
+function init() {
+    inquirer.prompt(questions)
+    .then((answers)=>{
+        console.log(answers);
+        writeToFile("logo.svg", answers);
+    })
+}
+
+// Function call to initialize app
+init();
