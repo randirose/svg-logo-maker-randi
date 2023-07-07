@@ -1,7 +1,7 @@
 // import files/libraries
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Shape = require('./shapes.js');
+const {Triangle,Circle,Square} = require('./lib/shapes.js');
 
 // questions array for inquirer to prompt user with
 const questions = [
@@ -40,15 +40,15 @@ function writeToFile(fileName, answers){
     //code for what to write to the svg logo file
     let shapeSVG;
     if (answers.shapeType === "Triangle"){
-        triangle = new Triangle();
+        const triangle = new Triangle();
         shapeColor = triangle.setColor(answers.shapeColor);
         shapeSVG = triangle.render();
     } else if (answers.shapeType === "Circle"){
-        circle = new Circle();
+        const circle = new Circle();
         shapeColor = circle.setColor(answers.shapeColor);
         shapeSVG = circle.render();
     } else {
-        square = new Square();
+        const square = new Square();
         shapeColor = square.setColot(answers.shapeColor);
         shapeSVG = square.render();
     }
@@ -56,7 +56,7 @@ function writeToFile(fileName, answers){
 
     ${shapeSVG}
   
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answers.textColor}">${answers.logoTextext}</text>
+    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${answers.textColor}">${answers.logoText}</text>
   
     </svg>`
     fs.writeFile(fileName, logoText, err =>{
