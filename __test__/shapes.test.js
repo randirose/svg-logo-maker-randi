@@ -6,7 +6,7 @@ describe('Triangle', ()=>{
         it('should render the Triangle svg string with the color passed in setColor for fill', ()=>{
             const triangle = new Triangle();
             triangle.setColor("blue");
-            expect(triangle.render()).toEqual('<polygon points="150 10, 60 190, 240 190" fill="blue" />');
+            expect(triangle.render()).toEqual('<polygon points="150 10, 10 190, 290 190" fill="blue" />');
         })
     })
 })
@@ -17,7 +17,7 @@ describe('Circle', ()=>{
         it('should render the Circle svg string with the color passed in setColor for fill', ()=>{
             const circle = new Circle();
             circle.setColor("#00FFFF"); // testing hex code here
-            expect(circle.render()).toEqual('<circle cx="150" cy="100" r="75" fill="#00FFFF" />');
+            expect(circle.render()).toEqual('<circle cx="150" cy="100" r="90" fill="#00FFFF" />');
         })
     })
 })
