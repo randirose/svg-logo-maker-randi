@@ -17,8 +17,14 @@ function writeToFile(fileName, answers){
 function init() {
     inquirer.prompt(questions)
     .then((answers)=>{
+        if (answers.logoText.length > 3){
+            // error handling for if user submits too many chars for logo text, logs msg and restarts question prompts
+            console.log("Logo text must be 3 characters or less in length, please start over:");
+            return inquirer.prompt(questions);
+        } else {
         console.log(answers);
         writeToFile("logo.svg", answers);
+        }
     })
 }
 
