@@ -2,11 +2,11 @@
 
 ## Description
 
-This project provides a simple and efficient CLI app to create an SVG logo by answering a few simple prompts. Using the Inquirer library, the user is prompted to define 4 aspects of their logo: text (up to 3 characters in length), text color, shape, and shape color. A `logo.svg` file is then written with the corresponding user choices.  
+This project provides a simple and efficient CLI app to create an SVG logo by answering a few simple prompts. Using the `inquirer` library, the user is prompted to define 4 aspects of their logo: text (up to 3 characters in length), text color, shape, and shape color. A `logo.svg` file is then written with the corresponding user choices.  
 
-Building this app helped to expand my knowledge on class constructors and inheritance, and further helped expand my knowledge on the file system library and writing new files. In addition, this was our first project implementing testing (see Tests section below).  
+Building this app helped to expand my knowledge on class constructors and inheritance, and further helped expand my knowledge on the file system (`fs`) library and writing new files, as well as using inquirer. In addition, this was our first project implementing testing (see Tests section below).  
 
-This project is easily expandable, as well. Though we've started with a very simple logo, it would be easy to add additional shapes and their constructor classes. You could also make the text (including size and color) more customizeable in future itterations of this app.
+This project is easily expandable, as well. Though we've started with a very simple logo, it would be easy to add additional shapes and their constructor classes. You could also make the text (including size and color) more customizeable in future iterations of this app.
 
 ## Table of Contents 
 
@@ -70,7 +70,9 @@ Features in this project include:
 
 ## Tests
 
-Testing is ran with `Jest` on this app. You will need to install jest as a dev dependency if you'd like to run the testing suites created in `shapes.test.js`, in the `__test__` folder. Once installed, in order to run the tests, you'll run `npm run test` in your CLI.
+Testing is ran with `Jest` on this app. You will need to install jest as a dev dependency if you'd like to run the testing suites created in `shapes.test.js`, in the `__test__` folder.  
+
+Once installed, in order to run the tests, you'll run `npm run test` in your CLI.
 
 The testing suites are designed to test two things:
 - The functionality of the setColor() function in the Shape class constructor, which is then inherited by the Triangle, Circle, and Square class constructors. This function takes the user inputted shape color choice, and applies it to the SVG string rendered in the individual shape constructors.  
