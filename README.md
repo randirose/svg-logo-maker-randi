@@ -8,9 +8,7 @@ Building this app helped to expand my knowledge on class constructors and inheri
 
 This project is easily expandable, as well. Though we've started with a very simple logo, it would be easy to add additional shapes and their constructor classes. You could also make the text (including size and color) more customizeable in future itterations of this app.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
 
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
@@ -72,10 +70,10 @@ Features in this project include:
 
 ## Tests
 
-Testing is ran with Jest on this app. You will need to install jest as a dev dependency if you'd like to run the testing suites created in `shapes.test.js`, in the `__test__` folder. Once installed, in order to run the tests, you'll run `npm run test` in your CLI.
+Testing is ran with `Jest` on this app. You will need to install jest as a dev dependency if you'd like to run the testing suites created in `shapes.test.js`, in the `__test__` folder. Once installed, in order to run the tests, you'll run `npm run test` in your CLI.
 
 The testing suites are designed to test two things:
 - The functionality of the setColor() function in the Shape class constructor, which is then inherited by the Triangle, Circle, and Square class constructors. This function takes the user inputted shape color choice, and applies it to the SVG string rendered in the individual shape constructors.  
-- The functionality of the render() functions in each of the Tri/Cir/Squ constructors. This function renders an SVG string with shape-appropriate coordinates and width/heighth data, as well as the color set by the inherited setColor() function.  
+- The functionality of the render() functions in each of the Tri/Cir/Squ constructors. This function renders an SVG string with shape-appropriate coordinates and width/height data, as well as the color set by the inherited setColor() function.  
 
 Overall, the tests will check if these constructor functions produce the correct SVG string, with the correct shape and color chosen by the user.
