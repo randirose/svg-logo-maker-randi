@@ -60,6 +60,7 @@ Follow the instructions below to use this app to easily create a simple SVG logo
 
 Walk-through Tutorial Vid (link to Google Drive): https://drive.google.com/file/d/1qakh_NwkYhJPQOdDTK3NbeVO2XYW8K0Z/view  
 
+https://github.com/randirose/svg-logo-maker-randi/assets/128757891/130a66e0-5588-4bd8-995a-4915bb95ef95
 
 ![Screenshot of testing results](assets/screenshot-testing.png)  
 ![Screenshot of generated logo](assets/screenshot-logo-generator.png)  
