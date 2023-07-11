@@ -28,7 +28,7 @@ describe('Square', ()=>{
         it('should render the Square svg string with the color passed in setColor for fill', ()=>{
             const square = new Square();
             square.setColor("yellow");
-            expect(square.render()).toEqual('<rect x="75" y="25" width="150" height="150" fill="yellow" />');
+            expect(square.render()).toEqual('<rect x="60" y="10" width="180" height="180" fill="yellow" />');
         })
     })
 })
