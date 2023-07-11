@@ -44,7 +44,7 @@ To install this app, you can clone the code here: //github repo url
 
 You will need to have `node.js` installed on your computer to run this app.  
 
-Once on your local machine, you will need to install `inquirer v. 8.2.4` to run the user prompts in the CLI. In order to use the testing suites, you will need to install `jest` as a dev dependency, as well. See Tests below for more information on testing, and see the package.json to see all dependencies for the app. Run `npm install` in your CLI to install all corresponding libraries.
+Once on your local machine, you will need to install `inquirer v. 8.2.4` to run the user prompts in the CLI. In order to use the testing suites and run the unit tests, you will need to install `jest` as a dev dependency, as well. See Tests below for more information on testing, and see the package.json to see all dependencies for the app. Run `npm install` in your CLI to install all corresponding libraries.
 
 ## Usage
 
@@ -56,8 +56,11 @@ Follow the instructions below to use this app to easily create a simple SVG logo
 - Once `logo.svg` is succesfully created, you can view your new logo in a browser  
 - Rename your logo.svg file to save, and re-run the CLI to continue to create new logos  
 
-** walk-thru video and screenshots
+** walk-thru video and screenshots, example svgs
 ![alt text](assets/images/screenshot.png)
+![Example Circle SVG](examples/circle-example.svg)
+![Example Square SVG](examples/square-example.svg)
+![Example Triangle SVG](examples/triangle-example.svg)
 
 ## Features
 
@@ -74,7 +77,7 @@ Testing is ran with `Jest` on this app. You will need to install jest as a dev d
 
 Once installed, in order to run the tests, you'll run `npm run test` in your CLI.
 
-The testing suites are designed to test two things:
+The unit tests are designed to test two things:
 - The functionality of the setColor() function in the Shape class constructor, which is then inherited by the Triangle, Circle, and Square class constructors. This function takes the user inputted shape color choice, and applies it to the SVG string rendered in the individual shape constructors.  
 - The functionality of the render() functions in each of the Tri/Cir/Squ constructors. This function renders an SVG string with shape-appropriate coordinates and width/height data, as well as the color set by the inherited setColor() function.  
 
