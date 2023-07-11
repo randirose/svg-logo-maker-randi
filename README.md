@@ -56,9 +56,9 @@ Follow the instructions below to use this app to easily create a simple SVG logo
 - Once `logo.svg` is succesfully created, you can view your new logo in a browser  
 - Rename your logo.svg file to save, and re-run the CLI to continue to create new logos  
 
-** walk-thru video and screenshots, example svgs
+See walk-through video and screenshots (of process and of example SVGs) below:  
 
-Walk-through Tutorial Vid (link to Google Drive): https://drive.google.com/file/d/1qakh_NwkYhJPQOdDTK3NbeVO2XYW8K0Z/view  
+Walk-through Tutorial Video (link to Google Drive): https://drive.google.com/file/d/1qakh_NwkYhJPQOdDTK3NbeVO2XYW8K0Z/view  
 
 https://github.com/randirose/svg-logo-maker-randi/assets/128757891/130a66e0-5588-4bd8-995a-4915bb95ef95
 
