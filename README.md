@@ -57,10 +57,15 @@ Follow the instructions below to use this app to easily create a simple SVG logo
 - Rename your logo.svg file to save, and re-run the CLI to continue to create new logos  
 
 ** walk-thru video and screenshots, example svgs
-![alt text](assets/images/screenshot.png)  
-![Example Circle SVG](examples/circle-example.svg)  
-![Example Square SVG](examples/square-example.svg)  
-![Example Triangle SVG](examples/triangle-example.svg)  
+
+Walk-through Tutorial Vid (link to Google Drive): https://drive.google.com/file/d/1qakh_NwkYhJPQOdDTK3NbeVO2XYW8K0Z/view  
+
+
+![Screenshot of testing results](assets/screenshot-testing.png)  
+![Screenshot of generated logo](assets/screenshot-logo-generator.png)  
+![Example of generated Circle SVG](examples/circle-example.svg)  
+![Example of generated Square SVG](examples/square-example.svg)  
+![Example of generated Triangle SVG](examples/triangle-example.svg)  
 
 ## Features
 
